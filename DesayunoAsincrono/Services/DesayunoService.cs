@@ -45,10 +45,18 @@ public class DesayunoService : IDesayunoService
 
         await Task.WhenAll(tareaCafe, tareaZumo, tareaSarten, tareaHuevos, tareaBacon, tareaPan, tareaMantequilla);
     }
+    
+        public async Task<bool> PrepararConTimeoutAsync(Func<Task> solucion, int timeoutMs)
+        {
+            var tareaSolucion = solucion();
+            var tareaTimeout = Task.Delay(timeoutMs);
 
-    public Task<bool> PrepararConTimeoutAsync(Func<Task> solucion, int timeoutMs)
-        => throw new NotImplementedException();
+            var ganadora = await Task.WhenAny(tareaSolucion, tareaTimeout);
 
+            return ganadora == tareaSolucion;
+        }
+    
+    
     private static async Task EjecutarAccionAsync(Accion accion)
     {
         Console.WriteLine($"Iniciando: {accion.Nombre}");
