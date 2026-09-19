@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DesayunoAsincrono.Tests/DesayunoAsincrono.Tests.csproj" />
+  <Project Path="DesayunoAsincrono/DesayunoAsincrono.csproj" />
+</Solution>
