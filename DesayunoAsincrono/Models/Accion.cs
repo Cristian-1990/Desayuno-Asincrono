@@ -1,3 +1,3 @@
-namespace MyNamespace;
+namespace DesayunoAsincrono.Models;
 
-public record Accion(string Nombre, int Duracion);
+public record Accion(string Nombre, int DuracionMs);
