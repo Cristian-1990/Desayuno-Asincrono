@@ -1,8 +1,5 @@
 # ☕ Desayuno Asíncrono
 
-![.NET](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet)
-![Tests](https://img.shields.io/badge/tests-4%2F4%20✅-brightgreen)
-![DWES](https://img.shields.io/badge/DWES--U1-tema%2016-blue)
 
 Práctica de 2º DAW: automatizar la preparación de un desayuno de 7 acciones, comparando distintas formas de ejecutarlas — desde el de modelo visto en 1º hasta la que realmente aprovecha el paralelismo.
 
